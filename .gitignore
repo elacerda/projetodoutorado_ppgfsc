@@ -1,0 +1,11 @@
+syntax: glob
+tmp
+projeto.bbl
+projeto.blg
+projeto.synctex.gz
+texto.tex
+.project
+.settings/org.eclipse.core.resources.prefs
+projeto.aux
+projeto.log
+projeto.out
