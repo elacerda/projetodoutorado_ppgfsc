@@ -266,22 +266,59 @@ entre o gás, a poeira e suas dependências com a formação estelar e a metalic
 base as galáxias do Projeto CALIFA {\em Survey}.
 
 \citet{Schmidt.1959a} foi o primeiro a propor a existência de uma lei de potências que liga a taxa
-de formação estelar e o gás. Anos depois, \citet{Kennicutt.1998a} estuda essa relação para diversos
-indicadores de formação estelar em diferentes faixas espectrais. Em seu trabalho Kennicutt
-estabelece ligações entre as densidades superficiais de gás e da taxa de formação estelar. Hoje em
-dia essas são comumente chamadas de relações de Kennicut-Schmidt (KS). Utilizando a síntese de
+de formação estelar (SFR - {\em star formation rate}) e o gás. Anos depois, \citet{Kennicutt.1998a}
+estuda essa relação para diversos indicadores de formação estelar em diferentes faixas espectrais.
+Em seu trabalho Kennicutt estabelece ligações entre as densidades superficiais de gás e da SFR. Hoje
+em dia essas são comumente chamadas de relações de Kennicut-Schmidt (KS). Utilizando a síntese de
 populações estelares já aplicada às galáxias do CALIFA também podemos estudar algumas propriedades
 do gás interestelar. Os mapas de regiões formadores de estrelas juntamente com os espectros
 residuais, resultados da subtração entre os espectros observados e os resultantes da síntese, contém
 informações sobre as estrelas, o gás e a poeira dessas distintas regiões. Ainda com a síntese é
 possivel obter a história de formação estelar através da fração de populações estelares com
 distintas idades \citep{Asari.etal.2007a}, não necessitando assim prender-se às zonas das galáxias
-onde o espectro tenha relação sinal ruído (S/N) suficiente para a leitura de todas as linhas
-espectrais necessárias para os cálculos sobre o gás e poeira. Na Fig. \ref{fig:SFRSDgasXSFRSDstar}
-podemos ver a comparação entre a densidade superficial da taxa de formação estelar ($\Sigma_{SFR}$)
-obtida com dados estelares e dados nebulares para 75070 zonas de 239 galáxias do projeto CALIFA.
+onde o espectro tenha relação sinal ruído (S/N) suficiente para a medida de todas as linhas
+espectrais necessárias para os cálculos sobre o gás e poeira. Na Fig. \ref{fig:SFRSDstarXSFRSDneb}
+podemos ver a comparação entre a densidade superficial da SFR ($\Sigma_{SFR}$) obtida com dados
+estelares e dados nebulares para 182234 zonas de 239 galáxias do projeto CALIFA. Esse é um resultado
+preliminar, mas que já nos mostra que com processos distintos conseguimos medir a mesma propriedade.
+Outro resultado para a mesma amostra de galáxias, também muito interessante mas ainda preliminar,
+pode ser visto na Fig.\ref{fig:tauVstarXSFRSDstar}. Nesta figura cada uma das 239 galáxias da
+amostra foi dividida em 20 anéis elípticos que vão do centro até 2 vezes a distância onde a
+intensidade da luz de cada galáxia cai pela metade (HLR - {\em half light radius}). Dentro de cada
+anel elíptico foi feito a média de $\Sigma_{SFR}$ e da extinção por poeira $\tau_V$ que resulta da
+síntese. Esse resultado nos mostra que a poeira correlaciona muito bem com a formação estelar,
+portanto, buscamos uma relação entre a poeira e o enriquecimento químico do gás, que é resultado
+direto da formação estelar.
 
-\citet{GonzalezDelgado.etal.2014b} analisa e evolução química das galáxias através das relações
+\begin{figure}
+	\begin{center}
+    \includegraphics[width=1.2\textwidth, angle=-90]{figuras/SFRSD_linregress_report.png}
+    \caption[]{Mosaico de comparação entre a densidade superficial de taxa de formação estelar
+    ($\Sigma_{SFR}$) obtida através de indicadores nebulares e estelares para 182234 zonas de 239
+    galáxias do Projeto CALIFA Survey. $\Sigma_{SFR}^\star$ é calculada através da síntese com
+    \starlight usando a massa em estrelas formada em cada zona até a idade marcada no canto superior
+    esquerdo de cada gráfico, razão pela qual o número de pontos varia em cada um deles. Para o
+    indicador nebular utilizamos a linha de emissão de H$\alpha$ presente em cada espectro de cada
+    zona. Em cada um dos gráficos há também dois tipos de regressão linear: OLS bisector, em
+    vermelho, e mínimos quadrados forçando a inclinação ser 1 (45 graus), em azul. Por final, a
+    linha tracejada identifica a reta identidade.}
+    \label{fig:SFRSDstarXSFRSDneb}
+    \end{center}
+\end{figure}
+
+\begin{figure}
+	\begin{center}
+    \includegraphics[width=0.99\textwidth]{figuras/logtauV_logaSFRSD_age_100Myr.png}
+    \caption[]{Extinção por poeira ($\tau_V^\star$) contra a densidade superficial de taxa de
+    formação estelar $\Sigma_{SFR}^\star$ nos últimos 100 milhões de anos, ambas produtos da
+    síntese de populações estelares para 239 galáxias do Projeto CALIFA Survey. Para cada uma das
+    galáxias são feitos médias em 20 anéis elípticos concêntricos até 2 vezes a distância onde a
+    intensidade da luz da galáxia cai pela metade.}
+    \label{fig:tauVstarXSFRSDstar}
+    \end{center}
+\end{figure}
+
+\citet{GonzalezDelgado.etal.2014b} analisa a evolução química das galáxias através das relações
 entre massa e metalicidade estelares, mostrando que a metalicidade estelar ($Z_\star$) correlaciona
 com a massa estelar ($M_\star$) e com a densidade superficial de massa estelar ($\mu_\star$), de
 maneira e em posições distintas das galáxias, mostrando que a relação entre massa e metalicidade é
@@ -293,21 +330,6 @@ nunca utilizando dados do projeto CALIFA {\em Survey}. Nesse projeto temos a cha
 esses estudos com resolução espacial em cada galáxia, podendo assim verificar efeitos locais nos
 processos de formação estelar e ao mesmo tempo, observar como esses efeitos e propriedades
 influenciam em propriedades globais das galáxias.
-
-\begin{figure}
-	\begin{center}
-    \includegraphics[width=1.2\textwidth, angle=-90]{figuras/SFRSD.png}
-    \caption[]{Mosaico de comparação entre a densidade superficial de taxa de formação estelar
-    (SFRSD - {\em star formation rate surface density}) obtida através de indicadores nebulares (no
-    exemplo utilizamos a luminosidade de H$\alpha$, eixo y) e a SFRSD média obtida através da
-    síntese de população estelares utilizando o \starlight (eixo x). Cada gráfico indica no canto
-    superior esquerdo a idade na qual a média estelar é obtida. Juntamente com dois tipos de
-    regressão linear: OLS bisector, em vermelho, e mínimos quadrados forçando a inclinação ser
-    1 (45 graus), em azul. Por final, a reta identidade também aparece em cada gráfico com a linha
-    tracejada.}
-    \label{fig:SFRSDgasXSFRSDstar}
-    \end{center}
-\end{figure}
 
 Durante os dois primeiros anos, no qual abarca um ano de estágio no IAA, na Espanha, participaremos
 ativamente na construção de ferramentas para tal estudo além de construção de um arcabouço teórico
